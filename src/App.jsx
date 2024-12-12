@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="flex h-screen flex-col items-center justify-center bg-biege-200">
-      <div className="flex flex-row">
+      <div className="flex flex-row bg-red">
         <div>
           <p>My balance</p>
           <p>$921.48</p>
@@ -18,7 +18,7 @@ function App() {
           </g>
         </svg>
       </div>
-      <div className="">
+      <div className="bg-biege-100">
         <h1>Spending - Last 7 days</h1>
         <div className="flex flex-row">
           <div>
@@ -51,7 +51,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-row bg-biege-100">
         <div>
           <p>Total this month</p>
           <p>@478.33</p>
