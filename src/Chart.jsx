@@ -1,5 +1,5 @@
-import React from "react";
-import { BarChart, Bar, XAxis, Tooltip } from "recharts";
+import React, { PureComponent } from "react";
+import { BarChart, Bar, XAxis, ResponsiveContainer } from "recharts";
 import data from "./data.json";
 
 function Chart() {
@@ -17,16 +17,42 @@ function Chart() {
       </text>
     );
   };
+  const CustomBar = (props) => {
+    const { fill, x, y, width, height, radius, day } = props;
+    const currentDay = new Date()
+      .toLocaleString("en-US", { weekday: "short" })
+      .toLowerCase();
+    return (
+      <rect
+        x={x}
+        y={y}
+        width={33}
+        height={height}
+        fill={day === currentDay ? "hsl(186, 34%, 60%)" : fill}
+        rx={3}
+        ry={3}
+      />
+    );
+  };
+
   return (
-    <BarChart width={365} height={200} data={data}>
-      <XAxis dataKey="day" tick={renderXAxisTick} />
-      <Bar dataKey="height1" barSize={122} fill="hsl(10, 79%, 65%)" x={422} />
-      <Bar dataKey="height2" barSize={122} fill="hsl(10, 79%, 65%)" />
-      <Bar dataKey="height3" barSize={122} fill="hsl(10, 79%, 65%)" />
-      <Bar dataKey="height4" barSize={122} fill="hsl(10, 79%, 65%)" />
-      <Bar dataKey="height5" barSize={122} fill="hsl(10, 79%, 65%)" />
-      <Bar dataKey="height6" barSize={122} fill="hsl(10, 79%, 65%)" />
-      <Bar dataKey="height7" barSize={122} fill="hsl(10, 79%, 65%)" />
+    <BarChart
+      width={342}
+      height={180}
+      data={data}
+      margin={{
+        top: 0,
+        right: 29,
+        left: 0,
+        bottom: 0,
+      }}
+    >
+      <XAxis dataKey="day" tick={renderXAxisTick} stroke="transparent" />
+      <Bar
+        dataKey="height"
+        fill="hsl(10, 79%, 65%)"
+        shape={(barProps) => <CustomBar {...barProps} />}
+      />
     </BarChart>
   );
 }

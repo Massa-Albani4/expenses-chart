@@ -1,5 +1,4 @@
 import React from "react";
-import data from "./data.json";
 import Chart from "./Chart";
 
 function App() {
@@ -25,15 +24,17 @@ function App() {
         </div>
       </div>
       <div className="mt-4 w-full rounded-lg bg-biege-100 p-5">
-        <h1 className="mb-9 text-xl font-bold">Spending - Last 7 days</h1>
-        <Chart />
-        <div className="mt-3 flex flex-row border-t-2 border-biege-200 pt-5">
-          <div className="mr-[5.5rem]">
-            <p className="text-sm text-gray">Total this month</p>
-            <p className="text-2xl font-bold">$478.33</p>
+        <h1 className="mb-11 text-2xl font-bold">Spending - Last 7 days</h1>
+        <div className="relative right-1">
+          <Chart />
+        </div>
+        <div className="mt-5 flex flex-row border-t-2 border-biege-200 pt-6">
+          <div className="mr-[5.35rem]">
+            <p className="mb-[.1rem] text-sm text-gray">Total this month</p>
+            <p className="text-[1.75rem] font-bold">$478.33</p>
           </div>
-          <div className="ml-[.45rem] mt-3">
-            <p className="ml-[3.8rem] text-sm font-bold">+2.4%</p>
+          <div className="ml-[.45rem] mt-6">
+            <p className="-mb-[.15rem] ml-[3.8rem] text-sm font-bold">+2.4%</p>
             <p className="text-sm text-gray">from last month</p>
           </div>
         </div>

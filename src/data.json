@@ -2,36 +2,36 @@
   {
     "day": "mon",
     "amount": 2543,
-    "height1": 280
+    "height": 100
   },
   {
     "day": "tue",
     "amount": 34.91,
-    "height2": 280
+    "height": 199
   },
   {
     "day": "wed",
     "amount": 52.36,
-    "height3": 280
+    "height": 299
   },
   {
     "day": "thu",
     "amount": 31.07,
-    "height4": 280
+    "height": 180
   },
   {
     "day": "fri",
     "amount": 23.39,
-    "height5": 280
+    "height": 130
   },
   {
     "day": "sat",
     "amount": 43.28,
-    "height6": 280
+    "height": 250
   },
   {
     "day": "sun",
     "amount": 25.48,
-    "height7": 280
+    "height": 150
   }
 ]
