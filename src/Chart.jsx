@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { BarChart, Bar, XAxis, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, Tooltip } from "recharts";
 import data from "./data.json";
 
 function Chart() {
@@ -47,9 +47,10 @@ function Chart() {
         bottom: 0,
       }}
     >
+      <Tooltip />
       <XAxis dataKey="day" tick={renderXAxisTick} stroke="transparent" />
       <Bar
-        dataKey="height"
+        dataKey="amount"
         fill="hsl(10, 79%, 65%)"
         shape={(barProps) => <CustomBar {...barProps} />}
       />
