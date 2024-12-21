@@ -14,6 +14,10 @@ export default {
     fontFamily: {
       body: ["DM Sans", "sans-serif"],
     },
+    screens: {
+      lg: "1440px",
+      xl: "1920px",
+    },
   },
   plugins: [],
 };
