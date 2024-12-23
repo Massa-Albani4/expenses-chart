@@ -91,7 +91,7 @@ function Chart() {
           }}
         />
       </BarChart>
-      <div className="flex gap-9 text-gray">
+      <div className="flex gap-9 text-gray xl:mt-3">
         <Text>mon</Text>
         <Text>tue</Text>
         <Text>wed</Text>
