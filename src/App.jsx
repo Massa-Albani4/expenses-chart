@@ -3,6 +3,7 @@ import Chart from "./Chart";
 import logo from "./assets/logo.svg";
 
 function App() {
+  console.log(window.innerWidth);
   return (
     <main className="flex h-screen flex-col items-center bg-biege-200 px-4 font-body text-brown">
       <div className="mt-16 flex w-full flex-row items-center justify-center gap-36 rounded-lg bg-red py-4 text-biege-100 xl:mt-52 xl:w-[30rem] xl:gap-64 xl:rounded-[1.2rem] xl:py-6">
