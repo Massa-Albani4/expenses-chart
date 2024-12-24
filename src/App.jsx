@@ -6,9 +6,9 @@ function App() {
   console.log(window.innerWidth);
   return (
     <main className="flex h-screen flex-col items-center bg-biege-200 px-4 font-body text-brown">
-      <div className="mt-16 flex w-full flex-row items-center justify-center gap-36 rounded-lg bg-red py-4 text-biege-100 xl:mt-52 xl:w-[30rem] xl:gap-64 xl:rounded-[1.2rem] xl:py-6">
+      <div className="mt-16 flex w-full flex-row items-center justify-center gap-[10.4rem] rounded-[.6rem] bg-red py-4 text-biege-100 xl:mt-52 xl:w-[30rem] xl:gap-64 xl:rounded-[1.2rem] xl:py-6">
         <div>
-          <p className="text-sm font-normal xl:mb-[.4rem] xl:text-base">
+          <p className="text-sm font-normal text-biege-200 xl:mb-[.4rem] xl:text-base">
             My balance
           </p>
           <p className="text-[1.39rem] font-bold xl:text-3xl xl:font-semibold">

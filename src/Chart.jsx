@@ -81,7 +81,7 @@ function Chart() {
     <div>
       <BarChart
         width={window.innerWidth === 1920 ? 450 : 342}
-        height={window.innerWidth === 1920 ? 140 : 170}
+        height={window.innerWidth === 1920 ? 150 : 170}
         data={data}
         margin={{
           top: 0,
