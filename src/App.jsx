@@ -18,13 +18,13 @@ function App() {
         <img className="h-10 w-14 xl:size-16" src={logo} alt="logo" />
       </div>
       <div className="mt-4 w-full rounded-lg bg-biege-100 px-5 py-4 xl:mt-5 xl:w-[30rem] xl:rounded-2xl xl:px-9 xl:py-8">
-        <h1 className="mb-11 text-2xl font-bold xl:text-3xl">
+        <h1 className="mb-8 text-2xl font-bold xl:text-3xl">
           Spending - Last 7 days
         </h1>
         <div className="relative right-1">
           <Chart />
         </div>
-        <div className="mt-5 flex flex-row border-t-2 border-biege-200 pt-6 xl:mb-3 xl:mt-7 xl:pt-7">
+        <div className="mb-1 mt-6 flex flex-row border-t-2 border-biege-200 pt-6 xl:mb-3 xl:mt-7 xl:pt-7">
           <div className="mr-[5.35rem]">
             <p className="mb-[.1rem] text-sm text-gray xl:mb-2 xl:text-lg">
               Total this month

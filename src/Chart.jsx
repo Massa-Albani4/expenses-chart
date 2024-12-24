@@ -50,8 +50,8 @@ function Chart() {
               ? "hsl(186, 34%, 60%)"
               : fill
         }
-        rx={3}
-        ry={3}
+        rx={window.innerWidth < 375 ? 3 : 5}
+        ry={window.innerWidth < 375 ? 3 : 5}
         cursor="pointer"
       />
     );
@@ -81,7 +81,7 @@ function Chart() {
     <div>
       <BarChart
         width={window.innerWidth === 1920 ? 450 : 342}
-        height={window.innerWidth === 1920 ? 140 : 180}
+        height={window.innerWidth === 1920 ? 140 : 170}
         data={data}
         margin={{
           top: 0,
@@ -110,14 +110,14 @@ function Chart() {
           }}
         />
       </BarChart>
-      <div className="flex text-xs text-gray xl:ml-[.65rem] xl:mt-3 xl:text-lg">
-        <p className="xl:mr-7">mon</p>
-        <p className="xl:mr-[1.85rem]">tue</p>
-        <p className="xl:mr-[1.85rem]">wed</p>
-        <p className="xl:mr-9">thu</p>
-        <p className="xl:mr-10">fri</p>
-        <p className="xl:mr-8">sat</p>
-        <p className="xl:mr-6">sun</p>
+      <div className="ml-[.6rem] mt-3 flex text-xs text-gray xl:ml-[.65rem] xl:mt-3 xl:text-lg">
+        <p className="mr-6 xl:mr-7">mon</p>
+        <p className="mr-6 xl:mr-[1.85rem]">tue</p>
+        <p className="mr-6 xl:mr-[1.85rem]">wed</p>
+        <p className="mr-7 xl:mr-9">thu</p>
+        <p className="mr-8 xl:mr-10">fri</p>
+        <p className="mr-6 xl:mr-8">sat</p>
+        <p className="mr-6 xl:mr-6">sun</p>
       </div>
     </div>
   );
