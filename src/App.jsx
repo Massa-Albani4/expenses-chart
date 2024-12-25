@@ -3,7 +3,6 @@ import Chart from "./Chart";
 import logo from "./assets/logo.svg";
 
 function App() {
-  console.log(window.innerWidth);
   return (
     <main className="flex h-screen flex-col items-center bg-biege-200 px-4 font-body text-brown">
       <section className="md:w-[21rem] md:rounded-xl md:gap-44 md:py-4 mt-16 flex w-full flex-row items-center justify-center gap-[10.4rem] rounded-[.6rem] bg-red py-4 text-biege-100 xl:mt-52 xl:w-[31rem] xl:gap-[16.5rem] xl:rounded-[1.2rem] xl:py-6">
@@ -22,7 +21,7 @@ function App() {
         />
       </section>
       <section className="md:w-[21rem] md:rounded-xl md:px-6 md:py-4 mt-4 w-full rounded-lg bg-biege-100 px-5 py-4 xl:mt-5 xl:w-[31rem] xl:rounded-[1.2rem] xl:px-9 xl:py-8">
-        <h1 className="md:text-xl mb-8 text-2xl font-bold xl:text-3xl">
+        <h1 className="md:text-xl md:mb-7 mb-8 text-2xl font-bold xl:text-3xl">
           Spending - Last 7 days
         </h1>
         <div className="relative right-1">

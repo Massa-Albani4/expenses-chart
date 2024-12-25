@@ -15,7 +15,7 @@ function Chart() {
       <rect
         x={x}
         y={y}
-        width={33}
+        width={window.innerWidth === 1024 ? 31 : 33}
         height={height}
         fill={
           isHovered
@@ -50,8 +50,8 @@ function Chart() {
               ? "hsl(186, 34%, 60%)"
               : fill
         }
-        rx={window.innerWidth < 375 ? 3 : 5}
-        ry={window.innerWidth < 375 ? 3 : 5}
+        rx={window.innerWidth < 375 ? 3 : window.innerWidth < 1024 ? 9 : 5}
+        ry={window.innerWidth < 375 ? 3 : window.innerWidth < 1024 ? 9 : 5}
         cursor="pointer"
       />
     );
@@ -80,12 +80,24 @@ function Chart() {
   return (
     <div>
       <BarChart
-        width={window.innerWidth === 1920 ? 450 : 342}
-        height={window.innerWidth === 1920 ? 150 : 170}
+        width={
+          window.innerWidth === 1920
+            ? 450
+            : window.innerWidth === 1024
+              ? 330
+              : 342
+        }
+        height={
+          window.innerWidth === 1920
+            ? 150
+            : window.innerWidth === 1024
+              ? 130
+              : 170
+        }
         data={data}
         margin={{
           top: 0,
-          right: 29,
+          right: 30,
           left: 0,
           bottom: 0,
         }}
@@ -110,12 +122,12 @@ function Chart() {
           }}
         />
       </BarChart>
-      <div className="ml-[.6rem] mt-3 flex text-xs text-gray xl:ml-[.65rem] xl:mt-3 xl:text-lg">
-        <p className="mr-6 xl:mr-7">mon</p>
-        <p className="mr-6 xl:mr-[1.85rem]">tue</p>
-        <p className="mr-6 xl:mr-[1.85rem]">wed</p>
-        <p className="mr-7 xl:mr-9">thu</p>
-        <p className="mr-8 xl:mr-10">fri</p>
+      <div className="md:ml-[.55rem] md:mt-2 ml-[.6rem] mt-3 flex text-xs text-gray xl:ml-[.65rem] xl:mt-3 xl:text-lg">
+        <p className="md:mr-5 mr-6 xl:mr-7">mon</p>
+        <p className="md:mr-[1.4rem] mr-6 xl:mr-[1.85rem]">tue</p>
+        <p className="md:mr-[1.3rem] mr-6 xl:mr-[1.85rem]">wed</p>
+        <p className="md:mr-7 mr-7 xl:mr-9">thu</p>
+        <p className="md:mr-[1.65rem] mr-8 xl:mr-10">fri</p>
         <p className="mr-6 xl:mr-8">sat</p>
         <p className="mr-6 xl:mr-6">sun</p>
       </div>
