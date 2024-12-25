@@ -15,6 +15,7 @@ export default {
       body: ["DM Sans", "sans-serif"],
     },
     screens: {
+      md: "1024px",
       lg: "1440px",
       xl: "1920px",
     },
