@@ -78,7 +78,7 @@ function Chart() {
   };
 
   return (
-    <div>
+    <div id="chartContainer">
       <BarChart
         width={
           window.innerWidth === 1920
@@ -122,12 +122,12 @@ function Chart() {
           }}
         />
       </BarChart>
-      <div className="md:ml-[.55rem] md:mt-2 ml-[.6rem] mt-3 flex text-xs text-gray xl:ml-[.65rem] xl:mt-3 xl:text-lg">
-        <p className="md:mr-5 mr-6 xl:mr-7">mon</p>
-        <p className="md:mr-[1.4rem] mr-6 xl:mr-[1.85rem]">tue</p>
-        <p className="md:mr-[1.3rem] mr-6 xl:mr-[1.85rem]">wed</p>
-        <p className="md:mr-7 mr-7 xl:mr-9">thu</p>
-        <p className="md:mr-[1.65rem] mr-8 xl:mr-10">fri</p>
+      <div className="ml-[.6rem] mt-3 flex text-xs text-gray md:ml-[.55rem] md:mt-2 xl:ml-[.65rem] xl:mt-3 xl:text-lg">
+        <p className="mr-6 md:mr-5 xl:mr-7">mon</p>
+        <p className="mr-6 md:mr-[1.4rem] xl:mr-[1.85rem]">tue</p>
+        <p className="mr-6 md:mr-[1.3rem] xl:mr-[1.85rem]">wed</p>
+        <p className="mr-7 md:mr-7 xl:mr-9">thu</p>
+        <p className="mr-8 md:mr-[1.65rem] xl:mr-10">fri</p>
         <p className="mr-6 xl:mr-8">sat</p>
         <p className="mr-6 xl:mr-6">sun</p>
       </div>
